@@ -1,0 +1,32 @@
+general {
+	output_format = "i3bar"
+	colors = true
+	color_good = "#A6E3A1"
+	color_degraded = "#F9E2AF"
+	color_bad = "#F38BA8"
+}
+
+order += "cpu_usage"
+order += "volume master"
+order += "ethernet enp7s0"
+order += "tztime local"
+
+cpu_usage {
+	format = "⚙️%usage"
+	max_threshold = 75
+}
+
+volume master {
+	format = "🔈%volume"
+	format_muted = "🔇"
+}
+
+ethernet enp7s0 {
+	format_up = "🌐"
+	format_down = "🦖"
+}
+
+tztime local {
+	format = "📅 %d ⌚%H:%M"
+	timezone = "Europe/Lisbon"
+}
