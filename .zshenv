@@ -1,1 +1,1 @@
-PATH="$HOME/go/bin:$PATH"
+PATH="$HOME/bin:$HOME/go/bin:$PATH"

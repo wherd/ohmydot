@@ -37,7 +37,7 @@ exec --no-startup-id nm-applet
 # Autostart picom when starting the i3 window manager
 #exec_always --no-startup-id picom -b
 
-exec_always --no-startup-id screenkey -p fixed --persist -t 0.25 -g 5%x5%+95%-5%
+#exec_always --no-startup-id screenkey -p fixed --persist -t 0.25 -g 5%x5%+95%-5%
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
